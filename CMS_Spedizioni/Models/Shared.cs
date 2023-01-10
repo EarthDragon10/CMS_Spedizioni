@@ -11,7 +11,7 @@ namespace CMS_Spedizioni.Models
     {
         public static SqlConnection GetConnectionDb()
         {
-            string con = ConfigurationManager.ConnectionStrings["ConnessioneDB"].ToString();
+            string con = ConfigurationManager.ConnectionStrings["CMS_Spedizione"].ToString();
             SqlConnection sql = new SqlConnection(con);
             return sql;
         }
