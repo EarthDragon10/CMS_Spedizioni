@@ -129,6 +129,7 @@
     </Compile>
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\DettaglioSpedizione.cs" />
+    <Compile Include="Models\Shared.cs" />
     <Compile Include="Models\Spedizione.cs" />
     <Compile Include="Models\StatoSpedizione.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
