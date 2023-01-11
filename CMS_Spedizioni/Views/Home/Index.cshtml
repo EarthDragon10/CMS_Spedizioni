@@ -1,57 +1,18 @@
-﻿@model IEnumerable<CMS_Spedizioni.Models.Cliente>
-
+﻿
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Home Page</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.IsPrivate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CodiceFiscale)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PIva)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Ruolo)
-        </th>
-        <th></th>
-    </tr>
+<div>
+    <h3>Sei un cliente?</h3>
+    <p>Trova la tua spedizione!</p>
+    @Html.ActionLink("Cerca Spedizione", "CercaSpedizione", "Spedizione")
+</div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsPrivate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CodiceFiscale)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PIva)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ruolo)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdCliente }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdCliente }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdCliente })
-        </td>
-    </tr>
-}
-
-</table>
+<div>
+    <h3>Sei un amministratore?</h3>
+    <p>effettua l'accesso!</p>
+    @Html.ActionLink("Cerca Spedizione", "CercaSpedizione", "Spedizione")
+</div>

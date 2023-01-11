@@ -1,18 +1,16 @@
-﻿using CMS_Spedizioni.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
 namespace CMS_Spedizioni.Controllers
 {
-    public class HomeController : Controller
+    public class AmministratoreController : Controller
     {
-        public ActionResult Index()
+        // GET: Amministratore
+        public ActionResult Login()
         {
-            
             return View();
         }
     }

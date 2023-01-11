@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AmministratoreController.cs" />
     <Compile Include="Controllers\DettaglioSpedizioneController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SpedizioneController.cs" />
@@ -205,11 +206,12 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Amministratore\Login.cshtml" />
+    <Content Include="Views\Spedizione\CercaSpedizione.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\DettaglioSpedizione\" />
-    <Folder Include="Views\Spedizione\" />
     <Folder Include="Views\Stato\" />
   </ItemGroup>
   <ItemGroup>

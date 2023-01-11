@@ -36,7 +36,7 @@ namespace CMS_Spedizioni.Models
                     cliente.IsPrivate = Convert.ToBoolean(reader["IsPrivate"]);
                     cliente.CodiceFiscale = reader["CodiceFiscale"].ToString();
                     cliente.PIva = reader["PIva"].ToString();
-                    cliente.Nome = reader["Nome"].ToString();
+                    cliente.Nome = reader["Nome"].ToString();                   
                     ListaCilenti.Add(cliente);
                 }
             }
